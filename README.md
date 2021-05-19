@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://www.itechyou.cn/" target="_blank"><img src="https://cdn.itechyou.cn/logo.png" ></a>
+	<a href="https://www.itechyou.cn/" target="_blank"><img src="https://cdn.itechyou.cn/logo.png" width="400" ></a>
 </p>
 
 # 梦想家CMS内容管理系统开源版J2EE代码
