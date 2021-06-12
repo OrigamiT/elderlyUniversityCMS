@@ -1,13 +1,17 @@
 <p align="center">
-	<a href="https://www.itechyou.cn/" target="_blank"><img src="http://cdn.itechyou.cn/1-1ZQ91JT60-L.png" ></a>
+	<a href="https://www.itechyou.cn/" target="_blank"><img src="https://cdn.itechyou.cn/logo.png" width="400" ></a>
 </p>
 
 # 梦想家CMS内容管理系统开源版J2EE代码
 
 当前版本：3.5.1
 
-梦想家CMS官网：http://www.itechyou.cn
-模版标签开发教程请参考：http://doc.itechyou.cn 
+1. 梦想家CMS官网：http://cms.itechyou.cn
+2. 梦想家CMS管理后台：http://cms.itechyou.cn/admin
+- 演示账号：demo1
+- 演示密码：123456
+3. I Tech You,我教你! 官网：http://www.itechyou.cn
+4. 模版标签开发教程请参考：http://doc.itechyou.cn 
 
 QQ群交流：
 - ①597652651
@@ -82,7 +86,7 @@ https://space.bilibili.com/482273402
 
 ##### 感谢各位大佬的支持，以下排名不分先后！同时也感谢各位开发者为社区作出的贡献。
 
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%">
 	<tr>
 		<th width="30%">用户</th>
 		<th width="30%">金额</th>
