@@ -56,10 +56,10 @@
 							<tr th:each="article : ${archives.list}">
 								<td><input type="checkbox" class="flat-grey list-child" th:value="${article.aid}"/></td>
 								<td><a href="#" th:text="${article.title}"></a></td>
-								<td th:text="${article.categoryCnName}">后台技术</td>
-								<td th:text="${#dates.format(article.createTime, 'yyyy-MM-dd')}">2018-08-13</td>
-								<td th:text="${article.clicks}">135</td>
-								<td th:text="${article.weight}">35</td>
+								<td th:text="${article.categoryCnName}"></td>
+								<td th:text="${#dates.format(article.createTime, 'yyyy-MM-dd')}"></td>
+								<td th:text="${article.clicks}"></td>
+								<td th:text="${article.weight}"></td>
 								<td><span th:text="${article.status}=='1'?'已发布':'未发布'" th:class="${article.status}=='1'?'label label-success':'label label-danger'">否</span></td>
 								<td>
 									<a target="_blank" th:href="'/article/' + ${article.aid}" class="btn btn-xs btn-warning">预览</a>
