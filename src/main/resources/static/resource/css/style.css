@@ -2570,7 +2570,7 @@ body>.header .logo .icon {
 	outline: none;
 }
 .skin-black .sidebar-form input[type="text"] {
-	color: #666;
+	color: #eeeeee;
 	-webkit-border-top-left-radius: 2px !important;
 	-webkit-border-top-right-radius: 0 !important;
 	-webkit-border-bottom-right-radius: 0 !important;
@@ -2586,7 +2586,6 @@ body>.header .logo .icon {
 }
 .skin-black .sidebar-form input[type="text"]:focus,
 .skin-black .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
-	background-color: #444;
 	border: 0;
 }
 .skin-black .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
