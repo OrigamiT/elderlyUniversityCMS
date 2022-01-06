@@ -23,4 +23,4 @@ spring:
 logging:
   path: D:/dreamer-cms/logs/
   level:
-    root: debug              
+    root: info              
