@@ -242,7 +242,7 @@
 					timeout:3000,
 					callbak:null
 				});
-		    	$("#" + inputEl).val(system.website + system.uploaddir + response.data.filepath);
+		    	$("#" + inputEl).val(system.website + system.uploaddir + '/' + response.data.filepath);
 		    });
 		    uploader.on('uploadError', function( file ) {
 		    	$("body").MessageBox({
