@@ -43,7 +43,7 @@ DreamerCMS从2.0.0版本开始采用了解析式引擎与编译式引擎并存�
 * 视图框架：Spring MVC 4
 * 工具包：Hutool 5.3.7
 * 持久层框架：MyBatis 3
-* 日志管理：Log4j2
+* 日志管理：Logback
 * 模版框架：Thymeleaf
 * JS框架：jQuery，Bootstrap
 * CSS框架：Bootstrap
@@ -153,13 +153,14 @@ https://space.bilibili.com/482273402
 
 <center>
     <div style="width:50%;float:left;text-align:right;">
-        <img src="http://cdn.itechyou.cn/20201201174329.png" width="100%" />
+        <img src="http://cdn.itechyou.cn/20201201174329.png" width="200" />
     </div>
     <div style="width:50%;float:right;text-align:left;">
-        <img src="http://cdn.itechyou.cn/20201201174339.jpg" width="100%" />
+        <img src="http://cdn.itechyou.cn/20201201174339.jpg" width="200" />
     </div>
     <div style="clear:both;"></div>
 </center>
+
 
 
 # 系统美图
