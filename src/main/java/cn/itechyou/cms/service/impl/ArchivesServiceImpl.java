@@ -35,11 +35,13 @@ public class ArchivesServiceImpl implements ArchivesService {
 	 * @throws TransactionException 
 	 */
 	@Override
-	public int save(Archives archives,String tableName,Map<String,Object> additional) throws TransactionException {
+	public int save(Archives archives,String tableName, Map<String,Object> additional) throws TransactionException {
 		int num = 0;
 		try {
 			num = archivesMapper.insertSelective(archives);
-			archivesMapper.insertAdditional(tableName, additional);
+			if(additional.size() > 0) {
+				archivesMapper.insertAdditional(tableName, additional);
+			}
 		} catch (Exception e) {
 			TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();//手动事务回滚
 			throw new TransactionException(e.getMessage());
@@ -97,7 +99,9 @@ public class ArchivesServiceImpl implements ArchivesService {
 		int num = 0;
 		try {
 			num = archivesMapper.updateByPrimaryKeySelective(archives);
-			archivesMapper.updateAdditional(tableName, additional,fid);			
+			if(additional.size() > 0) {
+				archivesMapper.updateAdditional(tableName, additional,fid);	
+			}
 		} catch (Exception e) {
 			TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();//手动事务回滚
 			throw new TransactionException(e.getMessage());
