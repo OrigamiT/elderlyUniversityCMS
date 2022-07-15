@@ -73,6 +73,12 @@ public class ArchivesController {
 				params.getEntity().remove("cid");
 			}
 		}
+		
+		if(params.getEntity().containsKey("cid")) {
+			cid = params.getEntity().get("cid").toString();
+			Category category = categoryService.queryCategoryByCode(cid);
+			model.addAttribute("category", category);
+		}
 		params.getEntity().put("sortBy", "create_time");
 		params.getEntity().put("sortWay", "desc");
 		PageInfo<Map<String,Object>> archives = archivesService.queryListByPage(params);

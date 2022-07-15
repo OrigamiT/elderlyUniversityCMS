@@ -27,11 +27,9 @@ import cn.itechyou.cms.annotation.Log;
 import cn.itechyou.cms.common.BaseController;
 import cn.itechyou.cms.common.ResponseResult;
 import cn.itechyou.cms.common.StateCodeEnum;
-import cn.itechyou.cms.entity.Licence;
 import cn.itechyou.cms.entity.Menu;
 import cn.itechyou.cms.entity.User;
 import cn.itechyou.cms.security.token.TokenManager;
-import cn.itechyou.cms.service.LicenceService;
 import cn.itechyou.cms.service.MenuService;
 import cn.itechyou.cms.vo.UserVO;
 import lombok.extern.slf4j.Slf4j;
@@ -44,8 +42,6 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 @RequestMapping("/admin/u")
 public class UserLoginController extends BaseController {
-	@Autowired
-	private LicenceService licenceService;
 	@Autowired
 	private MenuService menuService;
 	
@@ -81,13 +77,11 @@ public class UserLoginController extends BaseController {
 	public ModelAndView toIndex() {
 		ModelAndView mv = new ModelAndView();
 		String userId = TokenManager.getUserId();
-		Licence licence = licenceService.getLicence();
 		/**
 		 * 查询当前用户所拥有的菜单权限
 		 */
 		List<Menu> menus = menuService.queryListByUserId(userId);
 		mv.addObject("menus", menus);
-		mv.addObject("licence", licence);
 		mv.setViewName("admin/index");
 		return mv;
 	}

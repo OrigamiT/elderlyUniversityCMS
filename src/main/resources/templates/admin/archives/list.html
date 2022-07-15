@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dreamer Blog - 后台管理系统</title> 
+    <title>Dreamer CMS - 后台管理系统</title> 
     <!-- bootstrap 3.0.2 -->
     <link href="/resource/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- font Awesome -->
@@ -24,6 +24,7 @@
         <!--breadcrumbs start -->
         <ul class="breadcrumb">
 			<li><a href="/admin/dashboard/toIndex"><i class="fa fa-home"></i> 首页</a></li>
+			<li th:if="${category != null}"><a href="/admin/category" th:title="${category.cnname}" th:text="${category.cnname}"></a></li>
 			<li class="active">文章管理</li>
 		</ul>
         <!--breadcrumbs end -->
@@ -31,13 +32,12 @@
 </div>
 <section class="panel">
 	<div class="panel-body">
-         <!-- <span class="pull-right badge badge-info">32</span> -->
          <button class="btn btn-primary btn-addon btn-sm" th:typeid="${#strings.isEmpty(cid) ? '-1' : cid}" th:onclick="javascript: toAddArticle(this.getAttribute('typeid'))">
              <i class="fa fa-plus"></i>发布文章
          </button>
     </div>
     <div class="panel-body table-responsive">
-		<table class="table table-hover">
+		<table class="table table-hover table-border">
 			<thead>
 				<tr>
 					<th style="width:50px;">选择</th>

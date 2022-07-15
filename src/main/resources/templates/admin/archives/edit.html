@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dreamer Blog - 后台管理系统</title> 
+    <title>Dreamer CMS - 后台管理系统</title> 
     <!-- bootstrap 3.0.2 -->
     <link href="/resource/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- font Awesome -->
@@ -39,6 +39,7 @@
         <!--breadcrumbs start -->
         <ul class="breadcrumb">
 			<li><a href="/admin/dashboard/toIndex"><i class="fa fa-home"></i> 首页</a></li>
+			<li th:if="${article.categoryCnName != null}"><a href="/admin/category" th:title="${article.categoryCnName}" th:text="${article.categoryCnName}"></a></li>
 			<li class="active">编辑文章</li>
 		</ul>
         <!--breadcrumbs end -->
