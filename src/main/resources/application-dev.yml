@@ -2,7 +2,7 @@ server:
   port: 8888
 
 web:
-  resource-path: D:/dreamer-cms/
+  resource-path: G:/elderlyUniversitySrc/dreamer-cms/
 
 spring: 
   datasource: 
@@ -16,7 +16,6 @@ spring:
     port: 6379
     timeout: 2000
     database: 0
-    password: 123456
     jedis:
       pool:
         max-idle: 100
@@ -25,6 +24,6 @@ spring:
 
 # 日志配置
 logging:
-  path: D:/dreamer-cms/logs/
+  path: G:/NewMediaMaterial/dreamer_cms/logs/
   level:
     root: info              

@@ -1,0 +1,13 @@
+
+[	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(ØÞ×
+D
+java:S1948")Make "request" transient or serializable.(¸ô¾þÿÿÿÿ
+?
+java:S1948"*Make "response" transient or serializable.(œîE
+?
+java:S1948")Make "session" transient or serializable.(«Ž…¢
+V
+java:S1117*";Rename "session" which hides the field declared at line 26.(ìŒá«úÿÿÿÿ
+a
+java:S3252Q"FUse static access with "com.alibaba.fastjson.JSON" for "toJSONString".(ÀŒýãûÿÿÿÿ
+>	java:S108a")Either remove or fill this block of code.(ï­£Ä

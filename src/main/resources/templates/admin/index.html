@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dreamer CMS - 后台管理系统</title> 
+    <title>江苏有线-新媒体业务部CMS</title> 
     <link rel="icon" href="/resource/icon/favicon.ico" type="image/x-icon" />
     <link href="/resource/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/resource/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -37,7 +37,7 @@
 					<ul class="dropdown-menu dropdown-custom dropdown-menu-right">
 						<li class="dropdown-header text-center">用户中心</li>
 						<li>
-							<a href="/index" target="_blank"><i class="fa fa-home pull-right"></i> 网站首页</a>
+							<a href="/index" target="_blank"><i class="fa fa-home pull-right"></i> 秦淮老年大学首页</a>
 						</li>
 						<li class="divider"></li>
 						<li>
@@ -75,13 +75,28 @@
 		            <div class="lsm-sidebar">
 						<ul class="sidebar-menu">
 							<li class="active">
-								<a href="/admin/dashboard/toIndex" target="mainframe" class="waves-effect waves-dark"><i class="fa fa-dashboard"></i>仪表盘</a>
+								<a href="/admin/dashboard/t	oIndex" target="mainframe" class="waves-effect waves-dark"><i class="fa fa-dashboard"></i>   数据展示</a>
 							</li>
+							<!-- 遍历出的列表 -->
 							<li class="lsm-sidebar-item" th:each="item : ${menus}">
-			                    <a href="javascript:void(1);" th:if="not ${#lists.isEmpty(item.children)}"><i th:class="${item.menuIcon}"></i><span th:text="${item.menuName}"></span><i class="my-icon lsm-sidebar-more"></i></a>
-			                    <a th:href="@{${item.menuUrl}}" target="mainframe" class="waves-effect waves-dark" th:if="${#lists.isEmpty(item.children)}"><i th:class="${item.menuIcon}"></i><span th:text="${item.menuName}"></span></a>
+								<!-- 系统管理 -->
+			                    <a href="javascript:void(1);" th:if="not ${#lists.isEmpty(item.children)}">
+									<i th:class="${item.menuIcon}"></i>
+									<span th:text="${item.menuName}"></span>
+									<i class="my-icon lsm-sidebar-more"></i>
+								</a>
+								<!--  -->
+			                    <a th:href="@{${item.menuUrl}}" target="mainframe" class="waves-effect waves-dark" th:if="${#lists.isEmpty(item.children)}">
+									<i th:class="${item.menuIcon}"></i>
+									<span th:text="${item.menuName}"></span>
+								</a>
+								<!--  -->
 				                <ul th:if="not ${#lists.isEmpty(item.children)}">
-				                	<li th:each="child : ${item.children}"><a th:href="@{${child.menuUrl}}" target="mainframe" class="waves-effect waves-dark"><span th:text="${child.menuName}"></span></a></li>
+				                	<li th:each="child : ${item.children}">
+										<a th:href="@{${child.menuUrl}}" target="mainframe" class="waves-effect waves-dark">
+										    <span th:text="${child.menuName}"></span>
+										</a>
+									</li>
 				                </ul>
 			                </li>
 						</ul>
@@ -97,7 +112,7 @@
 			<iframe id="mainframe" name="mainframe" style="width:100%; border:0;" src="/admin/dashboard/toIndex"></iframe>
 		</section>
 		<div class="footer-main">
-			Copyright &copy; Dreamer CMS, Powered by <a href="http://www.iteachyou.cc" title="I Teach You,我教你！">I Teach You , 我教你！</a> 2018-2030
+		<!-- Copyright &copy; Dreamer CMS, Powered by <a href="http://www.iteachyou.cc" title="I Teach You,我教你！">I Teach You , 我教你！</a> 2018-2030 -->
 		</div>
 	</aside>
 	<!-- 右侧结束 -->
