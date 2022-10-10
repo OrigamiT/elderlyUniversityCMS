@@ -1,0 +1,15 @@
+
+t
+java:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(û”ÕÒøÿÿÿÿ
+h
+java:S3776("RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ç¹üü
+S
+java:S1854G"8Remove this useless assignment to local variable "list".(ÿÎã‡ùÿÿÿÿ
+T
+java:S1155-">Use isEmpty() to check whether the collection is empty or not.(ðûú‰
+j
+java:S3252M"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(ÉéÆ°øÿÿÿÿ
+5
+java:S2129U" Remove this "String" constructor(£ÂÜp
+V
+java:S1128";Remove this unused import 'com.github.pagehelper.PageInfo'.(‡Õ©šüÿÿÿÿ

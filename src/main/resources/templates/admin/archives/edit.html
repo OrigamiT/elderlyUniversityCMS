@@ -29,12 +29,12 @@
 <body>
 <div class="row">
     <div class="col-md-12">
-    	<h1 class="panel-heading">编辑文章</h1>
+    	<h1 class="panel-heading">编辑栏目内容</h1>
         <!--breadcrumbs start -->
         <ul class="breadcrumb">
 			<li><a href="/admin/dashboard/toIndex"><i class="fa fa-home"></i> 首页</a></li>
 			<li th:if="${article.categoryCnName != null}"><a href="/admin/category" th:title="${article.categoryCnName}" th:text="${article.categoryCnName}"></a></li>
-			<li class="active">编辑文章</li>
+			<li class="active">编辑栏目内容</li>
 		</ul>
         <!--breadcrumbs end -->
     </div>
@@ -52,7 +52,7 @@
 			<input th:name="${field.fieldName}" th:id="'input-' + ${field.id}" th:value="${article[field.fieldName]}" type="hidden" th:each="field : ${fields}" th:if="${field.dataType} == 'image'" />
 			<input th:name="${field.fieldName}" th:id="'input-' + ${field.id}" th:value="${article[field.fieldName]}" type="hidden" th:each="field : ${fields}" th:if="${field.dataType} == 'imageset'" />
 			<div class="form-group form-control-medium">
-				<label for="title">文章标题：</label>
+				<label for="title">内容标题：</label>
 				<input id="title" name="title" type="text" class="form-control" th:value="*{title}" placeholder="文章标题" />
 			</div>
 			<div class="form-group form-control-small">

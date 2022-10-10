@@ -30,7 +30,7 @@ import cc.iteachyou.cms.utils.StringUtil;
  * @version 1.0.0
  */
 @Component
-@Tag(beginTag="{dreamer-cms:list}",endTag="{/dreamer-cms:list}",regexp="\\{dreamer-cms:list[ \\t]*.*\\}([\\s\\S]+?)\\{/dreamer-cms:list\\}", attributes={
+@Tag(beginTag="<tt:list>",endTag="</tt:list>",regexp="\\<tt:list[ \\t]*.*\\>([\\s\\S]+?)\\</tt:list\\>", attributes={
 	@Attribute(name = "typeid",regex = "[ \t]+typeid=[\"\'].*?[\"\']"),
 	@Attribute(name = "pagenum",regex = "[ \t]+pagenum=[\"\'].*?[\"\']"),
 	@Attribute(name = "pagesize",regex = "[ \t]+pagesize=[\"\'].*?[\"\']"),

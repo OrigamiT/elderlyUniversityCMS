@@ -1,0 +1,20 @@
+
+h
+java:S2095u"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ÊÊ–Îûÿÿÿÿ
+N
+java:S1948,"3Make "fileConfiguration" transient or serializable.(¿ë€šúÿÿÿÿ
+I
+java:S1948/"3Make "attachmentService" transient or serializable.(ı­„ÿ
+E
+java:S19482"/Make "systemService" transient or serializable.(·§é­
+N
+java:S1854J"8Remove this useless assignment to local variable "rows".(…×á¨
+?
+java:S1481J")Remove this unused "rows" local variable.(…×á¨
+N
+java:S1854_"8Remove this useless assignment to local variable "rows".(–ß³
+U	java:S899]";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ
+i
+java:S4042]"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ
+?
+java:S1481_")Remove this unused "rows" local variable.(–ß³

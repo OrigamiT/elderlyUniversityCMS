@@ -14,12 +14,12 @@
 <body>
 <div class="row">
     <div class="col-md-12">
-    	<h1 class="panel-heading">文章管理</h1>
+    	<h1 class="panel-heading">内容管理</h1>
         <!--breadcrumbs start -->
         <ul class="breadcrumb">
 			<li><a href="/admin/dashboard/toIndex"><i class="fa fa-home"></i> 首页</a></li>
 			<li th:if="${category != null}"><a href="/admin/category" th:title="${category.cnname}" th:text="${category.cnname}"></a></li>
-			<li class="active">文章管理</li>
+			<li class="active">内容管理</li>
 		</ul>
         <!--breadcrumbs end -->
     </div>
@@ -27,7 +27,7 @@
 <section class="panel">
 	<div class="panel-body">
          <button class="btn btn-primary btn-addon btn-sm" th:typeid="${#strings.isEmpty(cid) ? '-1' : cid}" th:onclick="javascript: toAddArticle(this.getAttribute('typeid'))">
-             <i class="fa fa-plus"></i> 发布文章
+             <i class="fa fa-plus"></i> 发布新内容
          </button>
     </div>
     <div class="panel-body table-responsive">
@@ -35,7 +35,7 @@
 			<thead>
 				<tr>
 					<th style="width:50px;">选择</th>
-					<th>文章标题</th>
+					<th>内容标题</th>
 					<th>所属栏目</th>
 					<th>发布时间</th>
 					<th>浏览量</th>
@@ -56,7 +56,7 @@
 					<td>
 						<a target="_blank" th:href="'/article/' + ${article.aid}" class="btn btn-xs btn-warning">预览</a>
 						<span>&nbsp;|&nbsp;</span>
-						<a href="javascript:void(0)" class="btn btn-xs btn-success copyArticleIdBtn" th:aid="${article.aid}" th:onclick="javascript:copyArticleId(this.getAttribute('aid'))">复制文章ID</a>
+						<a href="javascript:void(0)" class="btn btn-xs btn-success copyArticleIdBtn" th:aid="${article.aid}" th:onclick="javascript:copyArticleId(this.getAttribute('aid'))">复制内容ID</a>
 						<span>&nbsp;|&nbsp;</span>
 						<a th:href="@{/admin/archives/toEdit(id=${article.aid},cid=${article.categoryId})}" class="btn btn-xs btn-success">编辑</a>
 						<span>&nbsp;|&nbsp;</span>

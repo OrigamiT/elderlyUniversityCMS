@@ -1,0 +1,49 @@
+
+t
+java:S2293E"YReplace the type specification in this constructor call with the diamond operator ("<>").(û”ÕÒøÿÿÿÿ
+p
+java:S2293¸"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªƒÚİ
+p
+java:S2293ã"YReplace the type specification in this constructor call with the diamond operator ("<>").(½¬á¢
+p
+java:S2293¢"YReplace the type specification in this constructor call with the diamond operator ("<>").(½¬á¢
+p
+java:S2293·"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªƒÚİ
+p
+java:S2293Ú"YReplace the type specification in this constructor call with the diamond operator ("<>").(½¬á¢
+†
+java:S1192Ö"oDefine a constant instead of duplicating this literal "redirect:/admin/archives/list?entity%5Bcid%5D=" 3 times.(òíŞâ
+a
+java:S1192ä"JDefine a constant instead of duplicating this literal "tableName" 4 times.(ûŸ´¯
+d
+java:S1192Ì"HDefine a constant instead of duplicating this literal "system_" 5 times.(Š–À×ùÿÿÿÿ
+c
+java:S1192…"GDefine a constant instead of duplicating this literal "weight" 4 times.(ôÇúÿÿÿÿÿ
+c
+java:S1192†"GDefine a constant instead of duplicating this literal "clicks" 4 times.(Š²¿Åøÿÿÿÿ
+g
+java:S1192‚"KDefine a constant instead of duplicating this literal "categoryId" 5 times.(ûö’¦ÿÿÿÿÿ
+{
+java:S1149Œ"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(÷ğš±øÿÿÿÿ
+{
+java:S1149•"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(°øñ“ıÿÿÿÿ
+v
+java:S1149Ã"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ûÃİö
+{
+java:S1149…"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(÷ğš±øÿÿÿÿ
+{
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(°øñ“ıÿÿÿÿ
+v
+java:S1149À"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ûÃİö
+h
+java:S3776z"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(©ÄÆ¸
+_
+java:S1858‘"C"substring" returns a string, there's no need to call "toString()".(ê—Ÿñûÿÿÿÿ
+^
+java:S4488Ú"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Î‹°v
+n
+java:S3776ö"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(úòˆÄşÿÿÿÿ
+_
+java:S1858Š"C"substring" returns a string, there's no need to call "toString()".(ê—Ÿñûÿÿÿÿ
+Z
+java:S1858“"C"substring" returns a string, there's no need to call "toString()".(Õ…Ïç

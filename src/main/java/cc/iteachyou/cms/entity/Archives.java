@@ -11,8 +11,8 @@ import lombok.Data;
 
 /**
  * 文章
- * @author 王俊南
- * Date: 2020-12-29
+ * @author 唐韬
+ * Date: 2022-10-10
  */
 @Data
 @Table(name = "system_archives")
